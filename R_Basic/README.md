@@ -1,6 +1,6 @@
-# R Basic 
-
-## Basic Data Type 
+#  <p align="center"> 😸😸 R Crush Course 😸😸
+## R Basic 
+### Basic Data Type 
 * Basic Arithmetic 
   * Addition ` 1+2 `
   * Subtraction  ` 9-2 `
@@ -22,7 +22,8 @@
   * Characters  ` char <- "Hello World!" `
   Text/string values are known as characters in R. We use quotation marks to create a text character string
   
-## Vector
+### Vector
+Vectors are one of the key data structures in R. A vector is a 1 dimensional array that can hold character, numeric, or logical data elements.
 We can create a vector by using the combine function ` c() ` To use the function, we pass in the elements we want in the array, with each individual element separated by a comma. We can't mix data types of the elements in an array, R will convert the other elements in the array to force everything to be of the same data type.
 ```R
   # Using c() to create a vector of numeric elements
@@ -108,3 +109,10 @@ v <- c(1,2,3,4,5,6,7,8,9,10)
 v[2:4]  # Slicing
 2 3 4
 ```
+
+### R Matrices
+* Basic Matrices
+A matrix will allow us to have a 2-dimensional data structure which contains elements consisting of the same data type. To create a matrix, we use the ` matrix() ` function. We can pass in a vector into the matrix:
+
+     
+     
