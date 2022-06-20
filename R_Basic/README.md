@@ -173,4 +173,18 @@ stock.matrix
 | :---:  | :---:|:---: |:---:|:----:| :-----: |
 | GOOG  |  450 | 451 | 452 | 445 | 468 | 
 |MSFT | 230  |231 | 232 | 326 | 228 |
-     
+
+ 
+ 
+ ### ✨ Contribution
+
+Contributions, issues, and feature requests are welcome!
+
+To contribute, see the GitHub documentation on **[creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)**.
+
+### 👏 Support
+
+Give a ⭐️ if you like this project!
+___________________________________
+
+<p>&copy; 2022 Haolia</p>
