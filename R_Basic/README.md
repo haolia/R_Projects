@@ -113,6 +113,64 @@ v[2:4]  # Slicing
 ### R Matrices
 * Basic Matrices
 A matrix will allow us to have a 2-dimensional data structure which contains elements consisting of the same data type. To create a matrix, we use the ` matrix() ` function. We can pass in a vector into the matrix:
+```R
+ v <- 1:10 
+ v 
+ 1 2 3 4 5 6 7 8 9 10
+ 
+ matrix(v)
+ ```
 
-     
+| 	1 |	
+| :---: |
+|  2	|	
+| 	3 |
+| 	4	|
+| 	5	|	
+| 	6	|	
+| 7	 |	
+| 	8	|	
+| 	9	|	
+| 10 |
+
+ ```R 
+ matrix(v,nrow=2)
+ ```
+ |  1 | 2 | 3 | 4 | 5 | 
+ | :---:|:---: |:---:|:----:| :-----: |
+ | 2  | 7 | 8 | 9 | 10 | 
+ 
+ * Creating Matrices from Vectors
+
+ We can combine vectors to later input them into a matrix. For example imagine the following vectors below of stock prices:
+ 
+ ```R
+ # not real prices
+goog <- c(450,451,452,445,468)
+msft <- c(230,231,232,236,228)
+stocks <- c(goog,msft)
+stock.matrix <- matrix(stocks,byrow=TRUE,nrow=2)
+ stock.matrix
+ ```
+ |  450 | 451 | 452 | 445 | 468 | 
+ | :---:|:---: |:---:|:----:| :-----: |
+ | 230  |231 | 232 | 326 | 228 | 
+ 
+ * Naming Matrices
+
+ Now that we have our matrix, it would be nice to name the rows and columns for reference. We can do this similarly to the `names()` function for vectors, but in this case we define `colnames()` and `rownames()`. So let's name our stock matrix:
+ ```R
+days <- c('Mon','Tue','Wed','Thu','Fri')
+st.names <- c('GOOG','MSFT')
+ 
+colnames(stock.matrix) <- days
+rownames(stock.matrix) <- st.names
+ 
+stock.matrix
+```
+ 
+|  |Mon | Tue | Wed | Thu | Fri |
+| :---:  | :---:|:---: |:---:|:----:| :-----: |
+| GOOG  |  450 | 451 | 452 | 445 | 468 | 
+|MSFT | 230  |231 | 232 | 326 | 228 |
      
